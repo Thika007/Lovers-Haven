@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import LocationMap from './components/LocationMap';
 import PhotoGallery from './components/PhotoGallery';
 import Slideshow from './components/Slideshow'; // Import the Slideshow component
+import Register from './pages/Register'; // Import the Register component
+
 
 const App = () => {
     return (
@@ -25,6 +27,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} /> 
             </Routes>
             <FeaturedCategories />
             <PhotoGallery />

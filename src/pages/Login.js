@@ -1,6 +1,7 @@
 // src/pages/Login.js
 import React from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Login = ({ onLogin }) => { // Accept onLogin as a prop
     const handleSubmit = (event) => {
@@ -50,7 +51,7 @@ const Login = ({ onLogin }) => { // Accept onLogin as a prop
                     </button>
 
                     <div className="mt-4 text-sm text-center register-link">
-                        <p>Don't have an account? <a href="#" className="font-semibold text-white hover:underline">Register</a></p>
+                        <p>Don't have an account? <Link to="/register" className="font-semibold text-white hover:underline">Register</Link></p>
                     </div>
                 </form>
             </div>
